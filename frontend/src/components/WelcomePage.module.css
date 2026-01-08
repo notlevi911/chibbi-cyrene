@@ -1,0 +1,127 @@
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Bahnschrift', 'Arial Black', 'Helvetica', 'sans-serif';
+}
+
+.content {
+  text-align: center;
+  background: #000;
+  padding: 60px 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: 'Bahnschrift', 'Arial Black', 'Helvetica', 'sans-serif';
+}
+
+.messageContainer {
+  text-align: center;
+  background: #000;
+  padding: 60px 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: 'Bahnschrift', 'Arial Black', 'Helvetica', 'sans-serif';
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+  font-family: 'Bahnschrift', 'Arial Black', 'Helvetica', 'sans-serif';
+}
+
+.message {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+  font-family: 'Bahnschrift', 'Arial Black', 'Helvetica', 'sans-serif';
+}
+
+.redirect {
+  font-size: 1.2rem;
+  color: #999;
+  font-style: italic;
+  font-family: 'Bahnschrift', 'Arial Black', 'Helvetica', 'sans-serif';
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.button {
+  --bg: #fff;
+  --hover-bg: #ff69b4;
+  --hover-text: #000;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid var(--bg);
+  border-radius: 20px;
+  padding: 0.6em 1.5em;
+  background: var(--bg);
+  transition: 0.2s;
+  min-width: 80px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Bahnschrift', sans-serif;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.yesButton {
+  --bg: #fff;
+  --hover-bg: #ff69b4;
+  --hover-text: #000;
+}
+
+.noButton {
+  --bg: #fff;
+  --hover-bg: #ff69b4;
+  --hover-text: #000;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 40px 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
