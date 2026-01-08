@@ -8,7 +8,7 @@ contract DeployChibbiCyrene is Script {
     function run() external {
         // Read environment variables
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        string memory baseURI = vm.envOr("BASE_URI", string("https://api.chibbi-cyrene.com/metadata/"));
+        string memory baseURI = vm.envOr("BASE_URI", string("https://ipfs.io/ipfs/bafybeianfxhbsenxx2okz47x4yfjthbiqgtr2a7giuhgzlv5fcnzryukfy/"));
         
         // Start broadcasting transactions
         vm.startBroadcast(deployerPrivateKey);

@@ -1,0 +1,27 @@
+{
+  "name": "Chibbi-Cyrene #61",
+  "description": "A magical chibbi character with pink hair and enchanted flowers. Part of the exclusive Chibbi-Cyrene collection.",
+  "image": "https://ipfs.io/ipfs/bafybeianfxhbsenxx2okz47x4yfjthbiqgtr2a7giuhgzlv5fcnzryukfy",
+  "attributes": [
+    {
+      "trait_type": "Hair Color",
+      "value": "Pink"
+    },
+    {
+      "trait_type": "Love Interest",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Trailblazer",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Ult Point Needed",
+      "value": "24"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "0 in my heart"
+    }
+  ]
+}
