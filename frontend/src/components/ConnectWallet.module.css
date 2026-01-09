@@ -15,7 +15,6 @@
 .connectButton:hover {
   background: #ff69b4;
   color: #fff;
-  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem 0 #fff;
 }
 

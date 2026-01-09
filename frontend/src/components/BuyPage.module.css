@@ -112,7 +112,6 @@
 .quantityButton:hover:not(:disabled) {
   background: #ff69b4;
   color: #fff;
-  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem 0 #fff;
 }
 
@@ -152,14 +151,12 @@
 .mintButton:hover:not(:disabled) {
   background: #ff69b4;
   color: #fff;
-  transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem 0 #fff;
 }
 
 .mintButton:disabled {
   opacity: 0.6;
   cursor: not-allowed;
-  transform: none;
   box-shadow: none;
 }
 
