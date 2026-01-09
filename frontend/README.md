@@ -1,16 +1,111 @@
-# React + Vite
+# Chibbi Cyrene NFT Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + TypeScript frontend for minting Chibbi Cyrene NFTs on Sepolia testnet.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Modern React 19 with TypeScript
+- 💰 Web3 wallet integration with Reown AppKit (WalletConnect)
+- 🔗 Ethereum contract interaction with wagmi v2
+- 📱 Fully responsive design with CSS modules
+- ⚡ Fast development with Vite
+- 🎯 Clean UI with animated buttons and transitions
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, TypeScript, Vite
+- **Web3**: wagmi v2, viem, Reown AppKit  
+- **Styling**: CSS Modules, responsive design
+- **Routing**: React Router DOM
+- **Network**: Sepolia Testnet
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Configure environment (optional):**
+   ```bash
+   # Get a project ID from https://cloud.reown.com for better WalletConnect support
+   # Copy .env.example to .env and update:
+   VITE_REOWN_PROJECT_ID=your-project-id-here
+   ```
+
+3. **Start development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Contract Details
+
+- **Contract Address**: `0xbe871568953ba822f245343140adff5e115aa4f5`
+- **Network**: Sepolia Testnet
+- **Price**: 0.01 ETH per NFT
+- **Max Supply**: 100 NFTs
+- **Max Per Transaction**: 10 NFTs
+
+## Getting Sepolia ETH
+
+To test the minting functionality, you'll need Sepolia ETH:
+- [Sepolia Faucet](https://sepoliafaucet.com/)
+- [Alchemy Sepolia Faucet](https://sepoliafaucet.com/)
+- [Chainlink Sepolia Faucet](https://faucets.chain.link/)
+
+## Usage
+
+1. **Welcome Page** (`/`): Choose if you love Cyrene (both options lead to minting)
+2. **Minting Page** (`/buy`): 
+   - Connect your wallet
+   - Select quantity (1-10)
+   - Mint your NFTs
+   - View transaction on Etherscan
+
+## Project Structure
+
+```
+src/
+├── components/           # React components
+│   ├── WelcomePage.tsx  # Landing page with YES/NO question
+│   ├── BuyPage.tsx      # Main minting interface  
+│   └── ConnectWallet.tsx # Wallet connection button
+├── config/
+│   └── wagmi.ts         # Web3 configuration
+├── contracts/
+│   └── ChibbiCyrene.json # Contract ABI
+├── App.tsx              # Main app with routing
+└── main.tsx            # App entry point
+```
+
+## Styling
+
+The app uses a consistent design system:
+- **Font**: Bahnschrift with fallbacks
+- **Colors**: Pure black background (#000), white buttons with pink hover (#ff69b4)
+- **Animations**: Transform and shadow effects on hover
+- **Layout**: Fullscreen, centered, responsive
+
+## Development
+
+The app is configured for modern development:
+- Hot module replacement
+- TypeScript strict mode
+- ESLint configuration
+- CSS Modules for scoped styling
+- Optimized production builds
+
+## Deployment
+
+The app is ready for deployment on platforms like:
+- Vercel
+- Netlify
+- GitHub Pages
+- Any static hosting service
+
+Just run `npm run build` and deploy the `dist/` folder.

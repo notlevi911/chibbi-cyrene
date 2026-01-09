@@ -1,5 +1,4 @@
 {
-  "address": "0xbe871568953ba822f245343140adff5e115aa4f5",
   "abi": [
     {
       "inputs": [
@@ -611,13 +610,6 @@
       "type": "function"
     },
     {
-      "inputs": [],
-      "name": "toggleMinting",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
           "internalType": "uint256",
@@ -634,6 +626,13 @@
         }
       ],
       "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "toggleMinting",
+      "outputs": [],
+      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
